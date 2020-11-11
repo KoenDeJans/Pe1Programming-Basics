@@ -1,0 +1,33 @@
+﻿<Window x:Class="Pe1KoenDeJans.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pe1KoenDeJans"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox x:Name="cmbStartHour" HorizontalAlignment="Left" Margin="19,65,0,0" VerticalAlignment="Top" Width="90" Height="20" />
+        <ComboBox x:Name="cmbEndHour" HorizontalAlignment="Left" Margin="146,65,0,0" VerticalAlignment="Top" Width="90" Height="20" />
+        <Label Content="Beginuur" HorizontalAlignment="Left" Margin="35,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.926" FontFamily="Bell MT"/>
+        <Label Content="Einduur" HorizontalAlignment="Left" Margin="166,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.895,0.733" FontFamily="Bell MT"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="274,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="20"/>
+        <TextBox x:Name="txtReduction" HorizontalAlignment="Left" Margin="400,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="20"/>
+        <Button x:Name="btnReserve" Content="Reserveer" HorizontalAlignment="Left" Margin="528,65,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.494,-0.148" Height="20" Click="btnReserve_Click" FontFamily="Bell MT" BorderThickness="2,2,2,2"/>
+        <Label x:Name="txtKorting" Content="Korting" HorizontalAlignment="Left" Margin="421,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.895,0.733" FontFamily="Bell MT"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="298,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.895,0.733" FontFamily="Bell MT"/>
+        <Button x:Name="btnAccept" Content="Aanvaard" HorizontalAlignment="Left" Margin="662,193,0,0" VerticalAlignment="Top" Width="59" Height="39" Background="#FF4AD10B" Click="btnAccept_Click" FontFamily="Bell MT" BorderThickness="2,2,2,2"/>
+        <Button x:Name="btnRefuse" Content="Weiger" HorizontalAlignment="Left" Margin="662,246,0,0" VerticalAlignment="Top" Width="59" Height="39" RenderTransformOrigin="0.525,0.334" Background="#FFFB3232" Click="btnRefuse_Click" FontFamily="Bell MT" BorderThickness="2,2,2,2"/>
+        <ListBox x:Name="lstData" Margin="19,101,183,87" SelectedIndex="0" Background="#FFF7F5F5"/>
+        <Label Content="Bevestigde reservaties:" HorizontalAlignment="Left" Margin="19,361,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.486,0.31" FontFamily="Bell MT"/>
+        <Label Content="Wachtlijst:" HorizontalAlignment="Left" Margin="376,361,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.486,0.31" FontFamily="Bell MT"/>
+        <Label Content="Inkomsten:" HorizontalAlignment="Left" Margin="487,361,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.486,0.31" FontFamily="Bell MT"/>
+        <Label Content="Reservatiesysteem voor een zaaltje te reserveren door Koen De Jans" HorizontalAlignment="Left" Margin="93,12,0,0" VerticalAlignment="Top" Width="517" BorderThickness="6,0,0,0" FontFamily="Bell MT" FontSize="14" FontStretch="Expanded" FontWeight="SemiBold" Background="#FFF0ECEC" Panel.ZIndex="-2" VerticalContentAlignment="Stretch" FlowDirection="LeftToRight"/>
+        <Label x:Name="lblGeweigerdeReservaties" Content="0" HorizontalAlignment="Left" Margin="319,361,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="1.571,0.541" FontFamily="Bell MT"/>
+        <Label x:Name="lblConfirmedReservations" Content="0" HorizontalAlignment="Left" Margin="141,361,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0,0.541" FontFamily="Bell MT"/>
+        <Label Content="Geweigerde reservaties:" HorizontalAlignment="Left" Margin="191,361,0,0" VerticalAlignment="Top" Width="137" FontFamily="Bell MT"/>
+        <Label x:Name="lblWaitingListReservations" Content="0" HorizontalAlignment="Left" Margin="434,361,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.571,0.541" FontFamily="Bell MT"/>
+        <Label x:Name="lblTotalAmount" Content="0" HorizontalAlignment="Left" Margin="554,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.118,0.233" Width="56" FontFamily="Bell MT"/>
+
+    </Grid>
+</Window>
